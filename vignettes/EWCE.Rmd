@@ -1,6 +1,6 @@
 ---
 title: "Expression Weighted Celltype Enrichment with *EWCE*"
-author: "Nathan Skene"
+author: "Alan Murphy and Nathan Skene"
 date: "`r Sys.Date()`"
 bibliography: ../inst/extdata/EWCE.bib
 csl: ../inst/extdata/nature.csl
@@ -67,7 +67,7 @@ The *EWCE* package is available from github. The old version available from the 
 ```
 install.packages("devtools")
 library(devtools)
-install_github("nathanskene/ewce")
+install_github("neurogenomics/EWCE")
 ```
 
 You can then load the package:

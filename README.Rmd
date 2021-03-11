@@ -1,6 +1,6 @@
 ---
 title: "Expression Weighted Celltype Enrichment with *EWCE*"
-author: "Nathan Skene"
+author: "Alan Murphy and Nathan Skene"
 date: "`r Sys.Date()`"
 bibliography: inst/extdata/EWCE.bib
 csl: inst/extdata/nature.csl
@@ -49,13 +49,13 @@ Bootstrapping is then performed using the `bootstrap.enrichment.test` function.
 
 # Installing EWCE
 
-The *EWCE* package is available from github. The old version available from the Bioconductor archives is depreciated and should not be used. To be able to install the package one needs first to install R then run the following lines of code:
+The *EWCE* package is available from github. There is a version of EWCE available in the Bioconductor archives but it is depreciated and should not be used. A separate repository of EWCE is currently being added to Bioconductor and should be available there from May 2021. In the interim, use the neurogenomics/EWCE repository. To be able to install the package one needs first to install R then run the following lines of code:
 
 ```
 if (!require("devtools")) {
   install.packages("devtools")
 }
-devtools::install_github("nathanskene/ewce")
+devtools::install_github("neurogenomics/EWCE")
 ```
 
 You can then load the package:

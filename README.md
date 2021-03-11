@@ -1,10 +1,9 @@
 Expression Weighted Celltype Enrichment with *EWCE*
 ================
-Nathan Skene
-2020-08-20
+Alan Murphy and Nathan Skene
+2021-03-11
 
 <!-- Readme.md is generated from Readme.Rmd. Please edit that file -->
-
 <!-- badges: start -->
 
 [![Build
@@ -35,9 +34,9 @@ reported it’s application to genetic and transcriptomic datasets, and in
 this vignette we detail how this can be done.
 
 Note that throughout this vignette we use the terms ‘cell type’ and
-‘sub-cell type’ to refer to two levels of annotation of what a cell
-type is. This is described in further detail in our paper<sup>1</sup>,
-but relates to the two levels of annotation provided in the Linnarsson
+‘sub-cell type’ to refer to two levels of annotation of what a cell type
+is. This is described in further detail in our paper<sup>1</sup>, but
+relates to the two levels of annotation provided in the Linnarsson
 dataset<sup>2</sup>. In this dataset a cell is described as having a
 cell type (i.e. ‘Interneuron’) and subcell type (i.e. ‘Int11’ a.k.a
 Interneuron type 11).
@@ -60,15 +59,18 @@ function.
 
 # Installing EWCE
 
-The *EWCE* package is available from github. The old version available
-from the Bioconductor archives is depreciated and should not be used. To
-be able to install the package one needs first to install R then run the
-following lines of code:
+The *EWCE* package is available from github. There is a version of EWCE
+available in the Bioconductor archives but it is depreciated and should
+not be used. A separate repository of EWCE is currently being added to
+Bioconductor and should be available there from May 2021. In the
+interim, use the neurogenomics/EWCE repository. To be able to install
+the package one needs first to install R then run the following lines of
+code:
 
     if (!require("devtools")) {
       install.packages("devtools")
     }
-    devtools::install_github("nathanskene/ewce")
+    devtools::install_github("neurogenomics/EWCE")
 
 You can then load the package:
 
@@ -114,21 +116,25 @@ by single-cell RNA-seq. Science,
 
 # References
 
-<div id="refs" class="references">
+<div id="refs" class="references csl-bib-body" line-spacing="2">
 
-<div id="ref-skene_2016">
+<div id="ref-skene_2016" class="csl-entry">
 
-1\. Skene, N. & Grant, S. Identification of vulnerable cell types in
-major brain disorders using single cell transcriptomes and expression
-weighted cell type enrichment. *Frontiers in Neuroscience* (2016).
-doi:[10.3389/fnins.2016.00016](https://doi.org/10.3389/fnins.2016.00016)
+<span class="csl-left-margin">1. </span><span
+class="csl-right-inline">Skene, N. & Grant, S. Identification of
+vulnerable cell types in major brain disorders using single cell
+transcriptomes and expression weighted cell type enrichment. *Frontiers
+in Neuroscience* (2016).
+doi:[10.3389/fnins.2016.00016](https://doi.org/10.3389/fnins.2016.00016)</span>
 
 </div>
 
-<div id="ref-zeisel2015cell">
+<div id="ref-zeisel2015cell" class="csl-entry">
 
-2\. Zeisel, A. *et al.* Cell types in the mouse cortex and hippocampus
-revealed by single-cell rna-seq. *Science* **347,** 1138–1142 (2015).
+<span class="csl-left-margin">2. </span><span
+class="csl-right-inline">Zeisel, A. *et al.* Cell types in the mouse
+cortex and hippocampus revealed by single-cell RNA-seq. *Science*
+**347,** 1138–1142 (2015).</span>
 
 </div>
 
