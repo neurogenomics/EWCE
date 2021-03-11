@@ -88,7 +88,7 @@ generate.celltype.data <- function(exp,annotLevels,groupName,no_cores=1,savePath
     #stopCluster(cl)
 
     # Use the rank norm transformation on specificity
-    rNorm <- function(ctdIN){   bbb = t(apply(ctdIN$specificity,1,RNOmni::rankNorm));  return(bbb)    }
+    rNorm <- function(ctdIN){   bbb = t(apply(ctdIN$specificity,1,RNOmni::RankNorm));  return(bbb)    }
 
 
     # ADD DENDROGRAM DATA TO CTD
