@@ -1,14 +1,27 @@
 Expression Weighted Celltype Enrichment with *EWCE*
 ================
 Alan Murphy and Nathan Skene
-2021-03-11
+2021-06-17
 
 <!-- Readme.md is generated from Readme.Rmd. Please edit that file -->
+
 <!-- badges: start -->
 
 [![Build
 Status](https://travis-ci.org/NathanSkene/EWCE.svg?branch=master)](https://travis-ci.org/NathanSkene/EWCE)
 <!-- badges: end -->
+
+# Note
+
+This repository for *EWCE* is now deprecated. Please install EWCE from
+Bioconductor (3.13, R 4.1). See
+[NathanSkene/EWCE](https://github.com/NathanSkene/EWCE) for the new
+repository and further information. One thing to note is that all
+functions which previously used dot ‘.’ notations to separate words have
+been updated to underscores ’\_’ (e.g, `bootstrap.enrichment.test()` is
+now `bootstrap_enrichment_test()`). The package [vignette
+website](https://nathanskene.github.io/EWCE/articles/EWCE.html) has been
+updated to this new version of EWCE and gives further details.
 
 # Introduction
 
@@ -34,9 +47,9 @@ reported it’s application to genetic and transcriptomic datasets, and in
 this vignette we detail how this can be done.
 
 Note that throughout this vignette we use the terms ‘cell type’ and
-‘sub-cell type’ to refer to two levels of annotation of what a cell type
-is. This is described in further detail in our paper<sup>1</sup>, but
-relates to the two levels of annotation provided in the Linnarsson
+‘sub-cell type’ to refer to two levels of annotation of what a cell
+type is. This is described in further detail in our paper<sup>1</sup>,
+but relates to the two levels of annotation provided in the Linnarsson
 dataset<sup>2</sup>. In this dataset a cell is described as having a
 cell type (i.e. ‘Interneuron’) and subcell type (i.e. ‘Int11’ a.k.a
 Interneuron type 11).
@@ -116,25 +129,21 @@ by single-cell RNA-seq. Science,
 
 # References
 
-<div id="refs" class="references csl-bib-body" line-spacing="2">
+<div id="refs" class="references">
 
-<div id="ref-skene_2016" class="csl-entry">
+<div id="ref-skene_2016">
 
-<span class="csl-left-margin">1. </span><span
-class="csl-right-inline">Skene, N. & Grant, S. Identification of
-vulnerable cell types in major brain disorders using single cell
-transcriptomes and expression weighted cell type enrichment. *Frontiers
-in Neuroscience* (2016).
-doi:[10.3389/fnins.2016.00016](https://doi.org/10.3389/fnins.2016.00016)</span>
+1\. Skene, N. & Grant, S. Identification of vulnerable cell types in
+major brain disorders using single cell transcriptomes and expression
+weighted cell type enrichment. *Frontiers in Neuroscience* (2016).
+doi:[10.3389/fnins.2016.00016](https://doi.org/10.3389/fnins.2016.00016)
 
 </div>
 
-<div id="ref-zeisel2015cell" class="csl-entry">
+<div id="ref-zeisel2015cell">
 
-<span class="csl-left-margin">2. </span><span
-class="csl-right-inline">Zeisel, A. *et al.* Cell types in the mouse
-cortex and hippocampus revealed by single-cell RNA-seq. *Science*
-**347,** 1138–1142 (2015).</span>
+2\. Zeisel, A. *et al.* Cell types in the mouse cortex and hippocampus
+revealed by single-cell rna-seq. *Science* **347,** 1138–1142 (2015).
 
 </div>
 

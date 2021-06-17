@@ -24,6 +24,10 @@ knitr::opts_chunk$set(tidy         = FALSE,
 [![Build Status](https://travis-ci.org/NathanSkene/EWCE.svg?branch=master)](https://travis-ci.org/NathanSkene/EWCE)
 <!-- badges: end -->
 
+# Note
+
+This repository for *EWCE* is now deprecated. Please install EWCE from Bioconductor (3.13, R 4.1). See [NathanSkene/EWCE](https://github.com/NathanSkene/EWCE) for the new repository and further information. One thing to note is that all functions which previously used dot '.' notations to separate words have been updated to underscores '_' (e.g, `bootstrap.enrichment.test()` is now `bootstrap_enrichment_test()`).  The package [vignette website](https://nathanskene.github.io/EWCE/articles/EWCE.html) has been updated to this new version of EWCE and gives further details.
+
 # Introduction
 
 The *EWCE* package is designed to facilitate expression weighted celltype enrichment analysis as described in our Frontiers in Neuroscience paper [@skene_2016].
